@@ -1,0 +1,60 @@
+<MyGrid>
+
+    first_name: first_id
+    last_name: last_id
+    email: email_id
+    school: school_id
+
+    GridLayout:
+        cols: 1
+        size: root.width -200, root.height - 200
+        pos: 100, 100
+
+
+        GridLayout:
+            cols: 2
+
+            Button:
+                text: "Sign In"
+
+            Button:
+                text: "Sign Out"
+
+
+        GridLayout:
+            cols: 2
+
+            Label:
+                text: "First Name: "
+
+            TextInput:
+                id: first_id
+                multiline: False
+
+            Label:
+                text: "Last Name: "
+
+            TextInput:
+                id: last_id
+                multiline: False
+
+            Label:
+                text: "Email: "
+
+            TextInput:
+                id: email_id
+                multiline: False
+
+
+            Label:
+                text: "School: "
+
+            TextInput:
+                id: school_id
+                multiline: False
+
+
+        Button:
+            text: "Submit"
+            on_press: root.press_button()
+            
